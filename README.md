@@ -8,22 +8,31 @@ pip install -r requirements.txt
 The YOLO frameworks used in the project will be installed automatically.
 # Train each version of YOLO
 YOLOv5:
+
 cd yolov5
+
 python train.py --img 640 --batch 16 --epochs 100 --data ../dataset/data.yaml --weights yolov5s.pt
 
 YOLOv7:
+
 cd yolov7
+
 python train.py --img 640 --batch 16 --epochs 100 --data ../dataset/data.yaml --weights yolov7.pt
 
 YOLOv8:
+
 cd yolov8
+
 yolo detect train data=../dataset/data.yaml model=yolov8s.pt epochs=100 imgsz=640
 
 (The YOLOv4 and YOLOv6 commands are added later in the corresponding folders.)
 # Detection
-YOLOv5
+YOLOv5:
+
 python detect.py --weights runs/train/exp/weights/best.pt --source 0
-YOLOv8
+
+YOLOv8:
+
 yolo detect predict model=runs/detect/train/weights/best.pt source=0
 
 # Expected results
