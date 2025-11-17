@@ -36,4 +36,9 @@ YOLOv8:
 yolo detect predict model=runs/detect/train/weights/best.pt source=0
 
 # Expected results
+
+Visualization results of comparative experiments for the two reliable models: YOLOv7 and YOLOv8
+
 ![image alt](https://github.com/WissalHILEL/Drone-vs-Bird-Detection-using-YOLOv4-YOLOv5-YOLOv6-YOLOv7-and-YOLOv8/blob/main/Document%2012_page-0001.jpg?raw=true)
+
+![image alt](https://github.com/WissalHILEL/Drone-vs-Bird-Detection-using-YOLOv4-YOLOv5-YOLOv6-YOLOv7-and-YOLOv8/blob/main/yolov8.jpg?raw=true)
